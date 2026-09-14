@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anshul Dev Aryan | B.Tech First Year Student (2026) | JECRC University</title>
+  <meta name="description" content="Portfolio of Anshul Dev Aryan - B.Tech First Year student (2026) at JECRC University, Jaipur. Specialized in C programming, computer fundamentals, and Git.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Dark Glows -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span id="toast-message" class="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Header & Navigation (Classic Portfolio Style) -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Anshul Dev Aryan Home">
+        <div class="logo-circle-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">Anshul Dev Aryan</span>
+          <span class="logo-sub">Classic Portfolio</span>
+        </div>
+      </a>
+
+      <!-- Center Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="copy-email-quick" class="btn btn-secondary btn-sm" title="Quickly copy Anshul's email">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+          </svg>
+          <span>Copy Email</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span class="btn-chevron">&gt;</span>
+          <span>Contact Us</span>
+        </a>
+        
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (3-Column Layout Matching Classic Portfolio Reference) -->
+    <section id="home" class="hero-section">
+      <div class="container hero-layout-3col">
+        
+        <!-- Left Column: Welcome & Bio -->
+        <div class="hero-col-left">
+          <span class="hero-kicker">WELCOME TO MY PORTFOLIO</span>
+          <h1 class="hero-main-title">
+            Hi, I AM <br>
+            Anshul Dev Aryan <br>
+            <span style="color: var(--primary);">A B.Tech Student</span>
+          </h1>
+          <p class="hero-bio">
+            <strong>2026 First Year Student</strong> at <strong>JECRC University, Jaipur</strong>. Passionate about <em>C programming</em>, <em>computer fundamentals</em>, and <em>basic Git & GitHub</em>. Focused on continuous self-learning, time management, and collaborative teamwork.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.85rem;">
+            <a href="#contact" class="hero-cta-btn">
+              <span class="btn-chevron">&gt;</span>
+              <span>Contact Us</span>
+            </a>
+            <a href="#skills" class="btn btn-secondary">
+              <span>View Skills</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Column: Circular Framed Portrait -->
+        <div class="hero-col-center">
+          <div class="portrait-circle-wrapper">
+            <img src="anshul.jpg" alt="Anshul Dev Aryan - B.Tech First Year Student" class="portrait-img">
+          </div>
+
+          <!-- Overlapping Floating Rating / Student Capsule (Matching Reference) -->
+          <div class="hero-rating-capsule">
+            <div>
+              <span class="rating-score">4.9 ★</span>
+              <span class="rating-label">B.Tech Student 2026</span>
+            </div>
+            <div class="rating-avatars">
+              <div class="avatar-mini">AD</div>
+              <div class="avatar-mini">JU</div>
+              <div class="avatar-mini">JP</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Vertical Metric Stack (Matching Reference) -->
+        <div class="hero-col-right">
+          
+          <!-- Metric 1 -->
+          <div class="metric-stack-item">
+            <div class="metric-icon-circle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <div class="metric-data">
+              <span class="metric-number">50+</span>
+              <span class="metric-subtext">C Programs & Exercises</span>
+            </div>
+          </div>
+
+          <!-- Metric 2 -->
+          <div class="metric-stack-item">
+            <div class="metric-icon-circle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6"/>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <div class="metric-data">
+              <span class="metric-number">100%</span>
+              <span class="metric-subtext">Academic Dedication</span>
+            </div>
+          </div>
+
+          <!-- Metric 3 (Explicitly 2026 JECRC Student!) -->
+          <div class="metric-stack-item">
+            <div class="metric-icon-circle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </div>
+            <div class="metric-data">
+              <span class="metric-number">2026</span>
+              <span class="metric-subtext">JECRC Student (1st Year)</span>
+            </div>
+          </div>
+
+          <!-- Metric 4 -->
+          <div class="metric-stack-item">
+            <div class="metric-icon-circle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="metric-data">
+              <span class="metric-number">Jaipur</span>
+              <span class="metric-subtext">Rajasthan, India</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MY EXPERIENCE & EDUCATION ROADMAP (Connected Dotted Timeline Matching Reference) -->
+    <section id="journey" class="experience-section">
+      <div class="container">
+        
+        <div class="roadmap-header">
+          <h2>My Education & Experience</h2>
+          <p>A connected chronicle of academic milestones, coursework, and practical labs.</p>
+          
+          <div class="roadmap-toggles">
+            <button class="roadmap-tab-btn active" id="btn-tab-edu">
+              <span>🎓</span>
+              <span>My Education</span>
+            </button>
+            <button class="roadmap-tab-btn" id="btn-tab-exp">
+              <span>💼</span>
+              <span>Academic Experience</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Connected Dotted Timeline Graphic -->
+        <div class="connected-roadmap">
+          <div class="roadmap-line-connector"></div>
+
+          <div class="roadmap-row roadmap-row-1">
+            
+            <!-- Milestone 1: 2026 B.Tech First Year (Active) -->
+            <div class="roadmap-node">
+              <div class="node-dot-marker active"></div>
+              <span class="node-year">2026 – Present</span>
+              <h3 class="node-title">B.Tech First Year</h3>
+              <p class="node-inst">JECRC University, Jaipur (Computer Science & Engineering)</p>
+            </div>
+
+            <!-- Milestone 2: 12th Grade -->
+            <div class="roadmap-node">
+              <div class="node-dot-marker"></div>
+              <span class="node-year">2025 – 2026</span>
+              <h3 class="node-title">12th Grade (PCM)</h3>
+              <p class="node-inst">Senior Secondary Education • Physics, Chemistry & Mathematics</p>
+            </div>
+
+            <!-- Milestone 3: 10th Grade -->
+            <div class="roadmap-node">
+              <div class="node-dot-marker"></div>
+              <span class="node-year">2023 – 2024</span>
+              <h3 class="node-title">10th Grade</h3>
+              <p class="node-inst">Secondary School Examination • All-Round Foundations</p>
+            </div>
+
+            <!-- Milestone 4: Programming & Git Lab -->
+            <div class="roadmap-node">
+              <div class="node-dot-marker"></div>
+              <span class="node-year">2026 Lab Work</span>
+              <h3 class="node-title">C & Git Practice</h3>
+              <p class="node-inst">Hands-On Systems Lab, Memory Pointers & Version Control</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Get to Know Me</span>
+          <h2 class="section-title">About Anshul Dev Aryan</h2>
+          <p class="section-description">
+            A curious mind with strong analytical discipline, studying at JECRC University, Jaipur (2026).
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Biography Narrative -->
+          <div class="about-card bio-card">
+            <div class="card-icon-header">
+              <div class="icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+              <h3 class="card-title">Who I Am</h3>
+            </div>
+            <p class="bio-text">
+              I am a <strong>2026 B.Tech First Year student</strong> at <strong>JECRC University</strong> in <strong>Jaipur, Rajasthan</strong>. 
+              My passion lies in understanding how computer hardware and operating systems interact with low-level software, starting with structured procedural code in C.
+            </p>
+            <p class="bio-text">
+              I emphasize <strong>strong fundamental concepts</strong> over shortcuts. Alongside core coding, I practice effective time management, clear presentation skills, and active teamwork.
+            </p>
+
+            <div class="quick-facts">
+              <div class="fact-pill">
+                <strong>Institution:</strong> JECRC University (2026)
+              </div>
+              <div class="fact-pill">
+                <strong>Current Focus:</strong> C Programming & OS Fundamentals
+              </div>
+              <div class="fact-pill">
+                <strong>Location:</strong> Jaipur, Rajasthan
+              </div>
+            </div>
+          </div>
+
+          <!-- Location & Roots: Jaipur -->
+          <div class="about-card location-card">
+            <div class="card-icon-header">
+              <div class="icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <h3 class="card-title">Location: Jaipur</h3>
+            </div>
+            <div class="location-content">
+              <div class="location-banner">
+                <span class="location-city">Jaipur</span>
+                <span class="location-tag">The Pink City • Rajasthan, India</span>
+              </div>
+              <p class="location-description">
+                Proudly based in Jaipur, Rajasthan. Attending JECRC University's campus allows me to collaborate with fellow engineering students and participate in local tech initiatives.
+              </p>
+              <div class="location-badges">
+                <span class="badge">📍 Jaipur Resident</span>
+                <span class="badge">🏫 JECRC University Campus</span>
+                <span class="badge">🇮🇳 Open for Local & Remote Tasks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Achievements & Experience -->
+          <div class="about-card achievement-card">
+            <div class="card-icon-header">
+              <div class="icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="6"/>
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+                </svg>
+              </div>
+              <h3 class="card-title">Academic Experience & Key Milestones</h3>
+            </div>
+
+            <div class="achievement-grid">
+              <div class="achievement-box">
+                <strong>Consistent Academic Rigor</strong>
+                <p>Maintained disciplined study habits through 10th grade, 12th grade (PCM), and current 2026 B.Tech engineering coursework.</p>
+              </div>
+              <div class="achievement-box">
+                <strong>C Programming Foundations</strong>
+                <p>Quickly grasped memory management, pointer manipulation, and structured algorithm design in laboratory exercises.</p>
+              </div>
+              <div class="achievement-box">
+                <strong>Classroom Presentation Commendation</strong>
+                <p>Recognized for delivering clear, well-articulated presentations on computer fundamentals and system architectures.</p>
+              </div>
+              <div class="achievement-box">
+                <strong>Peer Collaboration & Git Mentorship</strong>
+                <p>Assisted fellow lab mates in resolving compiler errors, pointer faults, and Git branching workflows.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hobbies & Personal Interests -->
+          <div class="about-card hobbies-card">
+            <div class="card-icon-header">
+              <div class="icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <h3 class="card-title">Hobbies & Passions</h3>
+            </div>
+
+            <div class="hobbies-grid">
+              <div class="hobby-tile">
+                <div class="hobby-icon">🎮</div>
+                <div class="hobby-info">
+                  <h4>Playing Video Games</h4>
+                  <p>Competitive & strategy multiplayer gaming that sharpens tactical thinking, quick reflexes, and team synergy.</p>
+                </div>
+              </div>
+
+              <div class="hobby-tile">
+                <div class="hobby-icon">🖥️</div>
+                <div class="hobby-info">
+                  <h4>Curious About Computers</h4>
+                  <p>Fascinated by hardware architectures, CPU clocks, RAM speeds, motherboard buses, and OS kernels.</p>
+                </div>
+              </div>
+
+              <div class="hobby-tile">
+                <div class="hobby-icon">🧩</div>
+                <div class="hobby-info">
+                  <h4>Puzzles & Logic</h4>
+                  <p>Solving algorithmic riddles and mathematical brainteasers that enhance structured problem-solving skills.</p>
+                </div>
+              </div>
+
+              <div class="hobby-tile">
+                <div class="hobby-icon">🤝</div>
+                <div class="hobby-info">
+                  <h4>Team Brainstorming</h4>
+                  <p>Bouncing software ideas off classmates, discussing new tech tools, and organizing study sessions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">What I Bring to the Table</span>
+          <h2 class="section-title">Technical & Professional Skills</h2>
+          <p class="section-description">
+            Combining rock-solid computer fundamentals with high-impact soft skills for dependable engineering performance.
+          </p>
+          
+          <!-- Category Filter Tabs -->
+          <div class="skills-filter" role="tablist">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+            <button class="filter-btn" data-filter="technical" role="tab" aria-selected="false">Technical Skills</button>
+            <button class="filter-btn" data-filter="soft" role="tab" aria-selected="false">Soft & Team Skills</button>
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skills-container">
+          
+          <!-- Technical Skill: C Programming -->
+          <div class="skill-card" data-category="technical">
+            <div class="skill-card-top">
+              <div class="skill-icon">&lt;C&gt;</div>
+              <span class="skill-category-badge">Technical Core</span>
+            </div>
+            <h3 class="skill-name">C Programming</h3>
+            <p class="skill-description">
+              Writing structured, efficient procedural code. Hands-on with memory addressing, pointer arithmetic, dynamic memory allocation, and basic data structures.
+            </p>
+            <div class="skill-topics">
+              <span class="topic-pill">Pointers & Memory</span>
+              <span class="topic-pill">Structs & Unions</span>
+              <span class="topic-pill">Arrays & Strings</span>
+              <span class="topic-pill">File Handling</span>
+              <span class="topic-pill">Recursion</span>
+            </div>
+            <div class="skill-level-bar">
+              <div class="level-label">
+                <span>Confidence & Practice</span>
+                <span>Active 2026 Coursework</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Skill: Computer Fundamentals -->
+          <div class="skill-card" data-category="technical">
+            <div class="skill-card-top">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="14" x="2" y="3" rx="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge">Technical Core</span>
+            </div>
+            <h3 class="skill-name">Computer Fundamentals</h3>
+            <p class="skill-description">
+              Understanding hardware-software abstraction, CPU registers, ALU operations, number systems (Binary, Hex, Octal), and Operating System essentials.
+            </p>
+            <div class="skill-topics">
+              <span class="topic-pill">CPU & Memory Hierarchy</span>
+              <span class="topic-pill">Binary & Logic Gates</span>
+              <span class="topic-pill">OS Basics (Process/Thread)</span>
+              <span class="topic-pill">File Systems</span>
+            </div>
+            <div class="skill-level-bar">
+              <div class="level-label">
+                <span>Conceptual Grasp</span>
+                <span>Strong Foundation</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Skill: Basic Git & GitHub -->
+          <div class="skill-card" data-category="technical">
+            <div class="skill-card-top">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="18" r="3"/>
+                  <circle cx="6" cy="6" r="3"/>
+                  <path d="M18 15V9a9 9 0 0 0-9-9"/>
+                  <path d="M6 9a9 9 0 0 0 9 9"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge">Version Control</span>
+            </div>
+            <h3 class="skill-name">Basic Git & GitHub</h3>
+            <p class="skill-description">
+              Tracking code history, staging changes, writing meaningful commit messages, creating branches, and pushing projects to remote GitHub repositories.
+            </p>
+            <div class="skill-topics">
+              <span class="topic-pill">git add / commit</span>
+              <span class="topic-pill">branch & merge</span>
+              <span class="topic-pill">remote push/pull</span>
+              <span class="topic-pill">README documentation</span>
+            </div>
+            <div class="skill-level-bar">
+              <div class="level-label">
+                <span>Practical Workflow</span>
+                <span>Daily Practice</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skill: Good & Fast Learner -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4"/>
+                  <path d="m4.93 10.93 2.83-2.83"/>
+                  <path d="M2 18h4"/>
+                  <path d="M20 18h2"/>
+                  <path d="m19.07 10.93-2.83-2.83"/>
+                  <circle cx="12" cy="18" r="4"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge soft-badge">Superpower</span>
+            </div>
+            <h3 class="skill-name">Fast & Eager Learner</h3>
+            <p class="skill-description">
+              Curious mindset that turns documentation, textbook problems, and compiler errors into learning opportunities. Unafraid to ask questions and try new concepts.
+            </p>
+            <div class="skill-topics">
+              <span class="topic-pill">Self-Directed Study</span>
+              <span class="topic-pill">Curiosity Driven</span>
+              <span class="topic-pill">Persistent Debugging</span>
+            </div>
+            <div class="skill-level-bar">
+              <div class="level-label">
+                <span>Adaptability</span>
+                <span>Exceptional</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skill: Good Team Worker -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge soft-badge">Collaboration</span>
+            </div>
+            <h3 class="skill-name">Good Team Worker</h3>
+            <p class="skill-description">
+              Believes great software is built through collaboration. Enjoys peer code reviews, shared lab projects, and actively encouraging colleagues.
+            </p>
+            <div class="skill-topics">
+              <span class="topic-pill">Active Listening</span>
+              <span class="topic-pill">Pair Programming</span>
+              <span class="topic-pill">Empathy & Respect</span>
+            </div>
+            <div class="skill-level-bar">
+              <div class="level-label">
+                <span>Synergy</span>
+                <span>High Impact</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skill: Time Management -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge soft-badge">Productivity</span>
+            </div>
+            <h3 class="skill-name">Time Management</h3>
+            <p class="skill-description">
+              Balancing rigorous engineering coursework, weekly laboratory assignments, and independent coding practice through planned schedules and focused sessions.
+            </p>
+            <div class="skill-topics">
+              <span class="topic-pill">Task Prioritization</span>
+              <span class="topic-pill">Deadline Adherence</span>
+              <span class="topic-pill">Daily Consistency</span>
+            </div>
+            <div class="skill-level-bar">
+              <div class="level-label">
+                <span>Reliability</span>
+                <span>Disciplined</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 86%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skill: Presentation & Communication -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge soft-badge">Communication</span>
+            </div>
+            <h3 class="skill-name">Presentation & Expression</h3>
+            <p class="skill-description">
+              Articulating complex technical concepts clearly to both technical and non-technical audiences. Confident speaker during academic seminars and project pitches.
+            </p>
+            <div class="skill-topics">
+              <span class="topic-pill">Slide Deck Design</span>
+              <span class="topic-pill">Clarity of Thought</span>
+              <span class="topic-pill">Public Speaking</span>
+            </div>
+            <div class="skill-level-bar">
+              <div class="level-label">
+                <span>Communication</span>
+                <span>Engaging & Clear</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS & CODE LAB SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Hands-On Code</span>
+          <h2 class="section-title">Projects & Learning Showcase</h2>
+          <p class="section-description">
+            Practical programs and repositories built during my 2026 first year to apply C programming, Git, and computer fundamental concepts.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: C Student Record System -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">C Language</span>
+              <span class="project-status">Completed</span>
+            </div>
+            <h3 class="project-title">Student Record Management System</h3>
+            <p class="project-excerpt">
+              A console application designed in C utilizing <code>struct</code> records and file pointers (<code>fopen</code>, <code>fread</code>, <code>fwrite</code>). Supports student registration, searching by roll number, calculating CGPA, and persisting data to disk.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">C</span>
+              <span class="tech-tag">File Handling</span>
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">CLI</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-outline btn-sm code-modal-btn" data-project="student-sys">
+                <span class="btn-chevron">&gt;</span>
+                <span>View Logic Overview</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2: Terminal Interactive Quiz & Game -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">Interactive C</span>
+              <span class="project-status">Featured</span>
+            </div>
+            <h3 class="project-title">Interactive Terminal Math & Logic Quiz</h3>
+            <p class="project-excerpt">
+              A fast-paced terminal game built in C to train mental math and computer fundamentals. Features timed questions, score evaluation, dynamic difficulty scaling, and high-score ranking.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">C</span>
+              <span class="tech-tag">Control Flow</span>
+              <span class="tech-tag">Randomization</span>
+              <span class="tech-tag">Game Logic</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-outline btn-sm code-modal-btn" data-project="quiz-game">
+                <span class="btn-chevron">&gt;</span>
+                <span>View Logic Overview</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: Number Base & Bitwise Converter -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">Fundamentals</span>
+              <span class="project-status">Academic Lab</span>
+            </div>
+            <h3 class="project-title">Binary & Bitwise Operations Visualizer</h3>
+            <p class="project-excerpt">
+              A foundational C utility to convert numbers between Decimal, Binary, and Hexadecimal, providing bit-by-bit breakdowns of bitwise AND, OR, XOR, and bit-shift operators.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">C</span>
+              <span class="tech-tag">Bitwise Ops</span>
+              <span class="tech-tag">Number Systems</span>
+              <span class="tech-tag">Algorithms</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-outline btn-sm code-modal-btn" data-project="bitwise-viz">
+                <span class="btn-chevron">&gt;</span>
+                <span>View Logic Overview</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: Git-Tracked Engineering Knowledge Hub -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">Git & GitHub</span>
+              <span class="project-status">Active Repo</span>
+            </div>
+            <h3 class="project-title">B.Tech First-Year Code Repository</h3>
+            <p class="project-excerpt">
+              A version-controlled Git repository containing laboratory code exercises, algorithm diagrams, structured C header files, and documentation for peer review.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">GitHub</span>
+              <span class="tech-tag">Markdown</span>
+              <span class="tech-tag">C Headers</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-outline btn-sm code-modal-btn" data-project="git-hub">
+                <span class="btn-chevron">&gt;</span>
+                <span>View Logic Overview</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Get In Touch With Anshul</h2>
+          <p class="section-description">
+            Whether you have a query, want to discuss a project collaboration, or just talk tech and gaming—feel free to drop a message!
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Left Column: Contact Cards & Info -->
+          <div class="contact-info-col">
+            
+            <!-- Email Card with 1-Click Copy -->
+            <div class="contact-card primary-contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-label">Direct University Email</span>
+                <p class="contact-val email-text" id="email-address">anshul.26bcon2235@jecrcu.edu.in</p>
+                <div class="contact-card-actions">
+                  <button id="btn-copy-contact" class="btn btn-primary btn-sm">
+                    <span class="btn-chevron">&gt;</span>
+                    <span>Click to Copy Email</span>
+                  </button>
+                  <a href="mailto:anshul.26bcon2235@jecrcu.edu.in" class="btn btn-secondary btn-sm">
+                    <span>Send Mail App</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-label">Location</span>
+                <p class="contact-val">Jaipur, Rajasthan, India</p>
+                <p class="contact-sub">Available for on-campus activities, hackathons & remote study groups.</p>
+              </div>
+            </div>
+
+            <!-- University Card (2026 Batch) -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-label">Institution</span>
+                <p class="contact-val">JECRC University</p>
+                <p class="contact-sub">B.Tech First Year Student (2026 Admission Batch)</p>
+              </div>
+            </div>
+
+            <!-- Availability Pill -->
+            <div class="availability-card">
+              <span class="pulse-dot"></span>
+              <div>
+                <strong>Open to Collaborations</strong>
+                <p>Always excited to connect with fellow students, mentors, and developers.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Send Message Form -->
+          <div class="contact-form-col">
+            <div class="form-container">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <p class="form-subtitle">Fill in your message details and send it straight to Anshul.</p>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="sender-name">Your Full Name <span class="required">*</span></label>
+                    <input type="text" id="sender-name" name="name" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+                    <span class="field-error" id="name-error"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="sender-email">Your Email Address <span class="required">*</span></label>
+                    <input type="email" id="sender-email" name="email" placeholder="name@example.com" required autocomplete="email">
+                    <span class="field-error" id="email-error"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-subject">Subject <span class="required">*</span></label>
+                  <input type="text" id="sender-subject" name="subject" placeholder="e.g. Collaboration on C project / Study group" required>
+                  <span class="field-error" id="subject-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-message">Message Content <span class="required">*</span></label>
+                  <textarea id="sender-message" name="message" rows="5" placeholder="Hi Anshul, I saw your portfolio and would like to connect about..." required></textarea>
+                  <div class="textarea-footer">
+                    <span class="field-error" id="message-error"></span>
+                    <span class="char-count"><span id="current-chars">0</span>/500 characters</span>
+                  </div>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                  <span class="btn-chevron">&gt;</span>
+                  <span>Send Message Now</span>
+                </button>
+
+                <div id="form-success-banner" class="form-success-banner" role="alert" style="display: none;">
+                  <div class="success-icon">✓</div>
+                  <div class="success-content">
+                    <h4>Message Dispatched!</h4>
+                    <p>Thank you for reaching out! A draft has been recorded and an email notification has been prepped for <strong>anshul.26bcon2235@jecrcu.edu.in</strong>.</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Overview Modal -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title">Project Details</h3>
+        <button id="modal-close" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary btn-sm" id="modal-close-secondary">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <div class="logo-circle-icon" style="width: 28px; height: 28px;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <span>Anshul Dev Aryan</span>
+        </div>
+        <p class="footer-desc">B.Tech First Year Student (2026) • JECRC University, Jaipur • Aspiring Software Engineer</p>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Back to top">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+          </svg>
+        </button>
+        <p class="copyright">© 2026 Anshul Dev Aryan. Classic Portfolio Theme.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
